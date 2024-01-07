@@ -3,9 +3,9 @@
 Calcular el costo final de un producto.
 Args:
   precio_original: El precio original del producto.
-  cupon _descuenti: El porcentaje de descuenti del cupón.
+  cupon _descuento: El porcentaje de descuento del cupón.
   IVA: el porcentaje de IVA
-  Cantidad: La cantidad d eproductos.
+  Cantidad: La cantidad de productos.
   peso_paquete: El peso del paquete en kilogramos.
   Destino_envio: El destino del envío.
 
@@ -13,8 +13,8 @@ Resultado:
    El costo final del producto.
 """
 
-# Aplicar el descuenti del cupón.
-precio_con descuento = precio:original * (1 - cupon_descuenti / 100)
+# Aplicar el descuento del cupón.
+precio_con descuento = precio:original * (1 - cupon_descuento / 100)
 
 # Aplicar el IVA.
 precio_con_IVA = precio_con_descuento * (1 + IVA / 100)
@@ -27,5 +27,14 @@ costo _envio = 10 + 2 * peso_paquete
 
 # Calcular el costo final del producto.
 costo_final = precio_final_unidades * cantidad + costo_envío
+
+return costo_final
+
+costo_final = calcular_costo_producto(precio_original, cupon_descuento, iva, cantidad, peso_paquete, destino_envio)
+print(f"El costo final del producto es {costo_final}")
+
+
+
+
 
 
