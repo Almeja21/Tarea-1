@@ -1,0 +1,30 @@
+// calcular_costo_producto(precio_original, cupon_descuento, IVA, cantidad, peso-paquete, destino_envio):
+"""
+Calcular el costo final de un producto.
+Args:
+  precio_original: El precio original del producto.
+  cupon _descuenti: El porcentaje de descuenti del cupón.
+  IVA: el porcentaje de IVA
+  Cantidad: La cantidad d eproductos.
+  peso_paquete: El peso del paquete en kilogramos.
+  Destino_envio: El destino del envío.
+
+Resultado:
+   El costo final del producto.
+"""
+
+# Aplicar el descuenti del cupón.
+precio_con descuento = precio:original * (1 - cupon_descuenti / 100)
+
+# Aplicar el IVA.
+precio_con_IVA = precio_con_descuento * (1 + IVA / 100)
+
+# Aplicae el descuento por cantidad.
+precio_final_unidades = precio_con_IVA * /1 - cantidad / 100)
+
+# Calcular el costo de envío.
+costo _envio = 10 + 2 * peso_paquete
+
+# Calcular el costo final del producto.
+costo_final = precio_final_unidades * cantidad + costo_envío
+
