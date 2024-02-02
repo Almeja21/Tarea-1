@@ -1,0 +1,57 @@
+Args:
+// Leer nombre del producto
+// Leer costo del producto
+// Sumar cantidad de productos
+// Aplicar 10% de cupon_descuento (0.10 + Número de productos)
+// Dar una cantidad con descuento
+// Definir el peso del producto (menos de 1 k, entre 1 y 2 K, + de 2 K)
+// Definir costo de envío (Costo en México, costo fuera de México) + peso + envío = costo de envío
+// Sumar cantidad con descuento + costo de envío= subtotal
+// Aplicar IVA 16% (.16 * subtotal) = TOTAL
+
+// primero, definiremos variables numéricas
+Definir costo_producto como Entero
+Definir cantidad_producto como Entero
+Definir resultado como Entero
+
+//Definir variable: costo_producto
+Definir costo_producto_tenis1 = $100
+Definir costo_producto_tenis2 = $100
+Definir costo_producto_tenis3 = $110
+
+//Sumar costo_producto seleccionados
+Si costo_productotenis1 es $100 + costo_producto_tenis3 es $110 entonces $210 es el resultado_inicial
+
+//Definir variable: Aplicar cupon_descuento 
+Definir cupon_descuento 10% = 0.1
+Definir cupon_descuento 20% = 0.2
+Definir cupon_descuento 30% = 0.3
+
+Si el cupon_descuento 10% es  < 0.1 entonces se multiplica por el resultado inicial
+	(0.1 * 210) = $21 descuento
+// El resultado se resta del resultado_inicial y obtenemos el cantidad_con_descuento
+	( 210 - 21) = $189 cantidad_con_descuento
+
+//Definir variable peso_producto y le asignamos un valor
+Si el peso es < que 1 k entonces su valor es = $10
+Si el peso es <= que 2 k entonces su valor es = $20
+Si el peso es > que 2 k entonces su valor es = $30
+
+//Definir variable costo_envío y le asignamos un valor
+Si el envío en Ciudad de México y zona metropolitana su valor es = $10
+Si el envío en en el interior de la República su valor es = $30
+Si el envío es fuera del país su valor es = $50
+
+// Sumar cantidad_con_descuento + peso_producto + costo_envío 
+$189 cantidad_con_descuento + $20 peso_producto + $50 costo_envío = 
+	$259 subtotal
+
+//Definir constante IVA 16%
+IVA es de 16%  = 0.16
+
+// Para dar costo con IVA multiplicar subtotal * IVA
+(259 * 0.16 ) = $41.44 costo_IVA
+
+// Para dar costo final sumar subtotal  + el costo_IVA 
+(259 + 41.44) = 
+	$300.44 costo_total
