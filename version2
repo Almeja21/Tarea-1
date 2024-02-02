@@ -1,0 +1,38 @@
+// Datos:
+    Precio original: $100
+    Cupón de descuento: 10% de descuento
+    IVA (impuesto al valor agregado): 16%
+    Cantidad: 2 pares de zapatos deportivos
+    Peso del paquete: 3 kg
+    Destino del envío: Nueva York
+
+// Args:
+  Definir: Nombre_producto
+  El precio original del producto: precio_original
+  El porcentaje de descuento del cupon: cupon_descuento
+  El porcentaje de IVA: IVA 16%
+  Cantidad: La cantidad de productos
+  Definir costo de envío
+    peso_paquete: El peso del paquete en kilogramos
+    Destino_envio: El destino del envio
+  
+
+// Resultado:
+   El costo total del producto
+
+   
+
+// escribir "Introduce precio original: "
+Leer precio_original desde teclado
+precio_original = $100
+
+Aplicar cupon_descuento
+Si el Precio_original es $100 entonces * 0.10 cupon_descuento 
+  10% cupon_descuento = $10 - Precio_original = $90 precio con descuento
+Si el IVA = 16% = 0.16 * $90 precio con descuento = entonces 14.4 IVA calculado
+Sumar $90 precio con descuento + IVA calculado = 104.4 precio con IVA
+
+Leer cantidad de productos
+Sumar el numero de productos seleccionados = (2 * 104.4) precio con IVA = 208.8 subtotal
+
+Leer peso_paquete sumar subtotal +
